@@ -16,6 +16,7 @@ export async function updateSchoolProfile(formData: FormData) {
     phone: formData.get('phone') as string,
     address: formData.get('address') as string,
     website_url: formData.get('website_url') as string,
+    facebook_page_url: formData.get('facebook_page_url') as string,
   }
 
   // Check if profile exists
