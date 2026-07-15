@@ -40,6 +40,9 @@ export default async function AdminLayout({
           <Link href="/admin/gallery" className="block px-4 py-2 rounded hover:bg-[#122b44]">
             Gallery
           </Link>
+          <Link href="/admin/social" className="block px-4 py-2 rounded hover:bg-[#122b44] text-blue-300">
+            Facebook Posts
+          </Link>
           <Link href="/admin/subscribers" className="block px-4 py-2 rounded hover:bg-[#122b44]">
             Subscribers
           </Link>
