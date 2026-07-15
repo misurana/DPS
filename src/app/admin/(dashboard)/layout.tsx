@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { logout } from './login/actions'
+import { logout } from '../login/actions'
 import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
 
