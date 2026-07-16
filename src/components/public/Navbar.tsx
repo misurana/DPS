@@ -66,7 +66,7 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="self-center text-xl lg:text-2xl font-display font-bold whitespace-nowrap text-white tracking-tight leading-tight">
-                DPS Dharampur
+                Divine Public School
               </span>
               <span className="text-[10px] lg:text-xs text-[#C9A84C] font-semibold uppercase tracking-widest hidden sm:block">
                 A Legacy of Excellence

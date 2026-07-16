@@ -12,7 +12,7 @@ export default async function Home() {
     .single()
 
   const facebookUrl = profile?.facebook_page_url || 'https://www.facebook.com/profile.php?id=100091686457841'
-  const schoolName = profile?.school_name || 'Dharampur Public School'
+  const schoolName = profile?.school_name || 'Divine Public School, Dharampur'
 
   return (
     <div className="flex flex-col min-h-screen pt-16">
@@ -83,7 +83,7 @@ export default async function Home() {
               <span className="text-brand-gold font-bold tracking-widest uppercase text-sm mb-4 block">About Our School</span>
               <h2 className="text-4xl font-bold text-brand-navy mb-6 font-display leading-tight">A Legacy of Academic Excellence</h2>
               <p className="text-lg text-gray-700 mb-8 leading-relaxed font-body">
-                {profile?.about || "At Dharampur Public School, we believe that education extends far beyond the four walls of a classroom. Our mission is to provide a comprehensive learning experience that develops intellectual curiosity, emotional intelligence, and moral character. We prepare our students not just for exams, but for life."}
+                {profile?.about || "At Divine Public School, Dharampur, we believe that education extends far beyond the four walls of a classroom. Our mission is to provide a comprehensive learning experience that develops intellectual curiosity, emotional intelligence, and moral character. We prepare our students not just for exams, but for life."}
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="flex items-center space-x-3">
@@ -166,10 +166,10 @@ export default async function Home() {
                 <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop" alt="Principal" className="w-24 h-24 rounded-full object-cover shadow-lg border-4 border-white" />
                 <div>
                   <p className="text-gray-700 leading-relaxed font-body mb-4">
-                    "Education is not the learning of facts, but the training of the mind to think. At DPS Dharampur, we strive to create an ecosystem where every child's unique potential is recognized and nurtured. We welcome you to join our family."
+                    "Education is not the learning of facts, but the training of the mind to think. At Divine Public School, Dharampur, we strive to create an ecosystem where every child's unique potential is recognized and nurtured. We welcome you to join our family."
                   </p>
                   <h4 className="font-bold text-brand-navy text-lg">Dr. Anita Sharma</h4>
-                  <p className="text-brand-gold font-semibold text-sm">Principal, DPS Dharampur</p>
+                  <p className="text-brand-gold font-semibold text-sm">Principal, Divine Public School, Dharampur</p>
                 </div>
               </div>
             </div>

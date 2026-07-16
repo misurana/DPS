@@ -25,7 +25,7 @@ export function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="self-center text-3xl font-display font-bold whitespace-nowrap text-white tracking-tight leading-tight">
-                  DPS Dharampur
+                  Divine Public School
                 </span>
                 <span className="text-[10px] text-[#C9A84C] font-semibold uppercase tracking-widest">
                   A Legacy of Excellence

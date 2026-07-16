@@ -16,7 +16,7 @@ import { Navbar } from "@/components/public/Navbar";
 import { Footer } from "@/components/public/Footer";
 
 export const metadata: Metadata = {
-  title: "Dharampur Public School",
+  title: "Divine Public School, Dharampur",
   description: "Empowering students with holistic education, fostering creativity, and building the leaders of tomorrow.",
 };
 
