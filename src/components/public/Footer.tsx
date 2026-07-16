@@ -94,8 +94,10 @@ export function Footer() {
         </div>
         <hr className="my-8 border-gray-800 sm:mx-auto lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-400 sm:text-center font-body">
+          <span className="text-sm text-gray-400 sm:text-center font-body flex items-center flex-wrap gap-2">
             © {currentYear} <Link href="/" className="hover:text-white transition-colors">Divine Public School, Dharampur</Link>. All Rights Reserved.
+            <span className="hidden sm:inline">|</span>
+            <Link href="/sitemap" className="hover:text-[#C9A84C] transition-colors">Sitemap</Link>
           </span>
           <span className="text-sm text-[#C9A84C] mt-4 sm:mt-0 block sm:inline font-semibold">
             Designed for Excellence
