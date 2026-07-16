@@ -12,34 +12,45 @@ export default function TermsConditionsPage() {
 
       <div className="max-w-screen-md mx-auto px-4 py-16 w-full">
         <div className="bg-white p-8 md:p-12 rounded-3xl card-shadow border border-gray-100 prose prose-lg prose-emerald max-w-none">
-          <p className="text-gray-600 mb-8 font-body">
-            Welcome to the official website of Divine Public School, Dharampur. By accessing or using our website and services, you agree to comply with and be bound by the following Terms and Conditions.
-          </p>
+          <div className="prose max-w-none font-body text-gray-700 space-y-6">
+            <p><strong>Last Updated: July 2026</strong></p>
+            <p>
+              By accessing and using the website of Divine Public School, Dharampur (www.dpsdharampur.co.in), you agree to be bound by the following terms and conditions. Please read them carefully.
+            </p>
 
-          <h2 className="text-2xl font-bold text-brand-navy font-display mt-8 mb-4">1. Admissions and Enrollment</h2>
-          <p className="text-gray-700 font-body mb-6">
-            Admission to Divine Public School is subject to seat availability, successful completion of the admission process, and fulfillment of all criteria as set by the school management. The school reserves the right to deny admission without providing a reason.
-          </p>
+            <h3 className="text-xl font-bold text-brand-navy mt-8 mb-4">1. Acceptance of Terms</h3>
+            <p>By using this website, you confirm that you are at least 18 years of age, or that you are using this website under the supervision of a parent or guardian. Your continued use of this website constitutes your acceptance of these terms.</p>
 
-          <h2 className="text-2xl font-bold text-brand-navy font-display mt-8 mb-4">2. Fee Payment</h2>
-          <p className="text-gray-700 font-body mb-6">
-            All school fees must be paid on or before the due dates specified by the administration. Late payments may attract a penalty. Fees once paid are non-refundable except under specific circumstances outlined in the school's fee policy.
-          </p>
+            <h3 className="text-xl font-bold text-brand-navy mt-8 mb-4">2. Use of Website Content</h3>
+            <p>All content on this website — including text, images, graphics and other materials — is the property of Divine Public School, Dharampur and is protected by applicable copyright laws. You may not reproduce, distribute or use any content from this website without prior written permission from the school.</p>
 
-          <h2 className="text-2xl font-bold text-brand-navy font-display mt-8 mb-4">3. Code of Conduct</h2>
-          <p className="text-gray-700 font-body mb-6">
-            Students are expected to maintain a high standard of discipline, respect towards staff and peers, and adhere to the school's dress code. Any violation of the school rules may result in disciplinary action, including suspension or expulsion.
-          </p>
+            <h3 className="text-xl font-bold text-brand-navy mt-8 mb-4">3. Admission & Enquiry Terms</h3>
+            <p>Submitting an enquiry or application through this website does not guarantee admission. Admissions are subject to availability, eligibility criteria and the school's admission policies in force at the time of application. The school reserves the right to accept or decline any application.</p>
 
-          <h2 className="text-2xl font-bold text-brand-navy font-display mt-8 mb-4">4. Website Usage</h2>
-          <p className="text-gray-700 font-body mb-6">
-            The content on this website is for general information purposes only. While we strive to keep the information up-to-date and correct, we make no representations or warranties of any kind about the completeness or accuracy of the information.
-          </p>
+            <h3 className="text-xl font-bold text-brand-navy mt-8 mb-4">4. Accuracy of Information</h3>
+            <p>While we make every effort to ensure that the information on this website is accurate and up to date, Divine Public School, Dharampur does not warrant the completeness or accuracy of any information published here. School fees, session dates, programmes and other details may be subject to change. Please contact the school directly for the most current information.</p>
 
-          <h2 className="text-2xl font-bold text-brand-navy font-display mt-8 mb-4">5. Amendments</h2>
-          <p className="text-gray-700 font-body mb-6">
-            Divine Public School reserves the right to modify these terms and conditions, school policies, and fee structures at any time. Changes will be communicated through official channels or updated on this website.
-          </p>
+            <h3 className="text-xl font-bold text-brand-navy mt-8 mb-4">5. Fee & Refund Policy</h3>
+            <p>School fees, once paid, are generally non-refundable except as provided under applicable regulations or as specifically stated in the school's fee policy communicated at the time of admission. Any refund requests must be submitted in writing to the school office.</p>
+
+            <h3 className="text-xl font-bold text-brand-navy mt-8 mb-4">6. Student Conduct</h3>
+            <p>Students enrolled at Divine Public School, Dharampur are expected to abide by the school's code of conduct, which is communicated to parents at the time of admission. The school reserves the right to take appropriate disciplinary action in case of violation of the code of conduct.</p>
+
+            <h3 className="text-xl font-bold text-brand-navy mt-8 mb-4">7. Limitation of Liability</h3>
+            <p>Divine Public School, Dharampur shall not be liable for any indirect, incidental or consequential damages arising from the use of or inability to use this website or any information contained herein.</p>
+
+            <h3 className="text-xl font-bold text-brand-navy mt-8 mb-4">8. Changes to Terms</h3>
+            <p>The school reserves the right to modify these Terms and Conditions at any time. Any changes will be posted on this page. Your continued use of the website after any changes constitutes your acceptance of the revised terms.</p>
+
+            <h3 className="text-xl font-bold text-brand-navy mt-8 mb-4">9. Contact Us</h3>
+            <p>For any questions regarding these Terms & Conditions, please contact us:</p>
+            <ul className="list-none space-y-2 font-medium">
+              <li>Divine Public School, Dharampur</li>
+              <li>Subathu Road, Dharampur, Tehsil- Kasauli, District Solan (HP) - 173209</li>
+              <li>Phone: 78071 35120 / 94185 26764</li>
+              <li>Email: divine_public@yahoo.com</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

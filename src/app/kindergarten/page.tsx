@@ -3,51 +3,57 @@ import { Palette, Music, Puzzle, Heart } from 'lucide-react'
 export default function KindergartenPage() {
   const activities = [
     { title: "Creative Arts", desc: "Painting, craft, and drawing to boost imagination.", icon: Palette },
-    { title: "Music & Movement", desc: "Rhymes, dancing, and rhythmic activities.", icon: Music },
-    { title: "Cognitive Play", desc: "Puzzles and blocks to develop problem-solving skills.", icon: Puzzle },
-    { title: "Social Emotional Learning", desc: "Sharing, caring, and developing early emotional intelligence.", icon: Heart },
+    { title: "Music & Rhymes", desc: "Singing and dancing to develop rhythm and coordination.", icon: Music },
+    { title: "Play & Learn", desc: "Educational games and puzzles for cognitive growth.", icon: Puzzle },
+    { title: "Care & Nurture", desc: "A safe, loving environment where every child feels at home.", icon: Heart }
   ]
 
   return (
     <div className="flex flex-col min-h-screen pt-24 pb-20">
       {/* Banner */}
       <div className="bg-brand-navy py-16 px-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=2073')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070')] bg-cover bg-center opacity-10"></div>
         <div className="max-w-screen-xl mx-auto relative z-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white font-display mb-4">Kindergarten</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white font-display mb-4">Little Wonders Kindergarten</h1>
           <div className="w-20 h-1 bg-brand-gold mx-auto"></div>
         </div>
       </div>
 
       <div className="max-w-screen-xl mx-auto px-4 py-16 w-full">
         <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
-          <div>
-            <h2 className="text-3xl font-bold text-brand-navy mb-6 font-display">Little Wonders Early Learning</h2>
-            <p className="text-gray-700 leading-relaxed mb-6 font-body text-lg">
-              Our Kindergarten program is designed to provide a safe, nurturing, and highly stimulating environment for young learners. We believe that early childhood education is the foundation for a lifetime of learning.
-            </p>
-            <p className="text-gray-700 leading-relaxed font-body">
-              Through play-based learning and guided exploration, we help children develop their cognitive, motor, and social skills in a joyful setting.
-            </p>
-          </div>
           <div className="relative">
-            <div className="absolute inset-0 bg-brand-gold transform translate-x-4 -translate-y-4 rounded-2xl"></div>
-            <img src="https://images.unsplash.com/photo-1545642412-25983f85822e?q=80&w=1000" alt="Kindergarten children playing" className="relative z-10 rounded-2xl shadow-xl w-full h-[400px] object-cover" />
+            <div className="absolute inset-0 bg-brand-gold transform -translate-x-4 translate-y-4 rounded-3xl"></div>
+            <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1000" alt="Kindergarten kids" className="relative z-10 rounded-3xl shadow-xl w-full h-[500px] object-cover" />
+          </div>
+          <div>
+            <h2 className="text-3xl font-display font-bold text-brand-navy mb-6">A Joyful Start to Learning</h2>
+            <div className="prose font-body text-gray-700 space-y-4">
+              <p>
+                Little Wonders Kindergarten at Divine Public School, Dharampur provides a joyful, nurturing environment for Nursery, LKG & UKG children in Tehsil Kasauli, District Solan, HP.
+              </p>
+              <p>
+                Our early childhood education program is designed to make learning a delightful experience. We believe that the early years are crucial for laying the foundation of a child's academic and social development.
+              </p>
+              <p>
+                With colorful classrooms, caring educators, and a play-way methodology, we ensure that your child looks forward to coming to school every day. We focus on developing fine motor skills, language, basic numeracy, and social interaction through engaging activities.
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl font-bold text-brand-navy mb-4 font-display">Our Learning Approach</h2>
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-display font-bold text-brand-navy mb-4">Our Kindergarten Activities</h2>
+          <div className="w-16 h-1 bg-brand-gold mx-auto"></div>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {activities.map((item, i) => (
-            <div key={i} className="bg-white rounded-2xl p-8 card-shadow border border-gray-100 text-center">
-              <div className="w-16 h-16 bg-brand-offwhite rounded-full flex items-center justify-center mx-auto mb-6 text-brand-gold">
+            <div key={i} className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 hover:-translate-y-2 transition-transform text-center">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#C9A84C]/10 text-[#C9A84C] mb-6">
                 <item.icon size={32} />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 font-display">{item.title}</h3>
-              <p className="text-gray-600 font-body">{item.desc}</p>
+              <h3 className="text-xl font-bold text-brand-navy font-display mb-3">{item.title}</h3>
+              <p className="text-gray-600 font-body text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>

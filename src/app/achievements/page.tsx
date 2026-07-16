@@ -2,10 +2,10 @@ import { Trophy, Medal, Star, Award } from 'lucide-react'
 
 export default function AchievementsPage() {
   const achievements = [
-    { title: "Outstanding Board Results 2024", desc: "Our students achieved exceptional marks in the HP Board examinations, with several securing top positions in the district.", icon: Trophy },
-    { title: "State-Level Sports Championship", desc: "Gold medalists in under-19 basketball and athletics at the state level.", icon: Medal },
-    { title: "National Science Olympiad", desc: "Multiple students qualified for the final rounds of the National Science Olympiad.", icon: Star },
-    { title: "Best School Award", desc: "Recognized as the best emerging school in the Solan district by regional educational authorities.", icon: Award },
+    { title: "Outstanding Board Results", desc: "Our students achieved exceptional marks in the HP Board examinations, securing top positions in the district.", icon: Trophy },
+    { title: "Sports Excellence", desc: "Multiple gold and silver medals won by our athletes at the district and state level sports meets.", icon: Medal },
+    { title: "Cultural Accolades", desc: "First prize in the inter-school cultural fest for group dance and drama performances.", icon: Star },
+    { title: "Best School Award", desc: "Recognized as a leading educational institution for holistic development by local educational authorities.", icon: Award }
   ]
 
   return (
@@ -20,21 +20,20 @@ export default function AchievementsPage() {
       </div>
 
       <div className="max-w-screen-xl mx-auto px-4 py-16 w-full">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl font-bold text-brand-navy mb-4 font-display">Celebrating Excellence</h2>
-          <p className="text-gray-600 font-body text-lg">We take immense pride in the academic, athletic, and cultural achievements of our students.</p>
+        <div className="text-center max-w-2xl mx-auto mb-16">
+          <p className="text-gray-600 font-body text-lg">
+            Discover the academic, sports and cultural achievements of students at Divine Public School, Dharampur. We celebrate the success of our students and teachers who strive for excellence in every field.
+          </p>
         </div>
-
-        <div className="grid md:grid-cols-2 gap-8">
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {achievements.map((item, i) => (
-            <div key={i} className="bg-white rounded-2xl p-8 card-shadow border-l-4 border-brand-gold flex items-start space-x-6 hover:-translate-y-1 transition-transform">
-              <div className="w-16 h-16 bg-brand-offwhite rounded-full flex items-center justify-center shrink-0 text-brand-gold border border-gray-100">
-                <item.icon size={32} />
+            <div key={i} className="bg-white p-8 rounded-3xl shadow-sm text-center border-b-4 border-brand-navy hover:shadow-md transition-shadow group">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-brand-navy/5 text-brand-navy mb-6 group-hover:bg-brand-navy group-hover:text-white transition-colors">
+                <item.icon size={28} />
               </div>
-              <div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3 font-display">{item.title}</h3>
-                <p className="text-gray-600 font-body leading-relaxed">{item.desc}</p>
-              </div>
+              <h3 className="text-xl font-bold text-brand-navy font-display mb-3">{item.title}</h3>
+              <p className="text-gray-600 font-body text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>

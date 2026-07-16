@@ -13,62 +13,80 @@ export default function MissionVisionPage() {
       </div>
 
       <div className="max-w-screen-xl mx-auto px-4 py-16 w-full">
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Mission */}
-          <div className="bg-white p-10 rounded-3xl card-shadow border-t-4 border-brand-navy">
-            <div className="w-16 h-16 bg-brand-navy/10 rounded-full flex items-center justify-center text-brand-navy mb-8">
-              <Target size={32} />
+        <div className="grid md:grid-cols-2 gap-12 mb-20">
+          <div className="bg-white p-8 md:p-10 rounded-3xl card-shadow border border-gray-100 flex flex-col h-full">
+            <div className="flex items-center space-x-4 mb-6 border-b border-gray-100 pb-6">
+              <div className="bg-[#C9A84C]/20 p-4 rounded-2xl">
+                <Target size={32} className="text-[#C9A84C]" />
+              </div>
+              <h2 className="text-3xl font-display font-bold text-brand-navy">Our Mission</h2>
             </div>
-            <h2 className="text-3xl font-bold text-brand-navy mb-6 font-display">Our Mission</h2>
-            <p className="text-gray-700 font-body text-lg leading-relaxed">
-              At Divine Public School, Dharampur, our mission is to provide an inclusive, stimulating, and supportive learning environment that empowers students to discover their passions. We strive to nurture critical thinkers, compassionate leaders, and lifelong learners equipped to thrive in a rapidly changing world.
+            <p className="text-gray-700 font-body mb-6 font-medium">
+              Our mission at Divine Public School, Dharampur is to provide every child in our community with a warm, encouraging and academically excellent education — one that prepares them not just for examinations, but for life itself.
             </p>
+            <ul className="space-y-3 font-body text-gray-600 mt-auto">
+              <li className="flex items-start"><span className="text-[#C9A84C] mr-2 font-bold">•</span> Deliver quality HP Board education with dedicated, trained and caring teachers</li>
+              <li className="flex items-start"><span className="text-[#C9A84C] mr-2 font-bold">•</span> Foster curiosity, confidence and a genuine love for learning in every student</li>
+              <li className="flex items-start"><span className="text-[#C9A84C] mr-2 font-bold">•</span> Build strong values — honesty, respect, responsibility and compassion</li>
+              <li className="flex items-start"><span className="text-[#C9A84C] mr-2 font-bold">•</span> Create an inclusive environment where every child feels valued and supported</li>
+              <li className="flex items-start"><span className="text-[#C9A84C] mr-2 font-bold">•</span> Partner with families, because we know great outcomes happen when school and home work together</li>
+              <li className="flex items-start"><span className="text-[#C9A84C] mr-2 font-bold">•</span> Celebrate each child's unique strengths and help them discover who they truly are</li>
+            </ul>
           </div>
-
-          {/* Vision */}
-          <div className="bg-brand-navy p-10 rounded-3xl shadow-xl border-t-4 border-brand-gold">
-            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center text-brand-gold mb-8">
-              <Lightbulb size={32} />
+          
+          <div className="bg-white p-8 md:p-10 rounded-3xl card-shadow border border-gray-100 flex flex-col h-full">
+            <div className="flex items-center space-x-4 mb-6 border-b border-gray-100 pb-6">
+              <div className="bg-[#C9A84C]/20 p-4 rounded-2xl">
+                <Lightbulb size={32} className="text-[#C9A84C]" />
+              </div>
+              <h2 className="text-3xl font-display font-bold text-brand-navy">Our Vision</h2>
             </div>
-            <h2 className="text-3xl font-bold text-white mb-6 font-display">Our Vision</h2>
-            <p className="text-gray-300 font-body text-lg leading-relaxed">
-              To be a premier institution of academic excellence that shapes young minds into global citizens. We envision a future where every student leaves our gates with strong moral character, intellectual curiosity, and the resilience to positively impact society.
+            <p className="text-gray-700 font-body mb-6 font-medium">
+              We envision Divine Public School, Dharampur as the most trusted and beloved school in the region — a school where every child blossoms into a confident, capable and compassionate human being ready to contribute meaningfully to society.
             </p>
+            <ul className="space-y-3 font-body text-gray-600 mt-auto">
+              <li className="flex items-start"><span className="text-[#C9A84C] mr-2 font-bold">•</span> Be the first choice for quality education for families across Dharampur and surrounding areas</li>
+              <li className="flex items-start"><span className="text-[#C9A84C] mr-2 font-bold">•</span> Achieve excellent HP Board results for our students year after year</li>
+              <li className="flex items-start"><span className="text-[#C9A84C] mr-2 font-bold">•</span> Develop well-rounded individuals who excel in academics, sports and the arts</li>
+              <li className="flex items-start"><span className="text-[#C9A84C] mr-2 font-bold">•</span> Create a school culture where children feel safe, seen and celebrated</li>
+              <li className="flex items-start"><span className="text-[#C9A84C] mr-2 font-bold">•</span> Grow into a strong community anchor that serves the families of this region</li>
+              <li className="flex items-start"><span className="text-[#C9A84C] mr-2 font-bold">•</span> Build alumni who give back to their school, their town and their nation</li>
+            </ul>
           </div>
         </div>
 
-        {/* Core Values */}
-        <div className="mt-20">
-          <h2 className="text-3xl font-bold text-center text-brand-navy mb-12 font-display">Our Core Values</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-20 h-20 bg-brand-offwhite rounded-full flex items-center justify-center mx-auto mb-6 text-brand-gold shadow-sm border border-gray-100">
-                <Compass size={36} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 font-display">Integrity</h3>
-              <p className="text-gray-600 font-body">Upholding honesty and strong moral principles in all actions.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-brand-offwhite rounded-full flex items-center justify-center mx-auto mb-6 text-brand-gold shadow-sm border border-gray-100">
-                <Heart size={36} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 font-display">Compassion</h3>
-              <p className="text-gray-600 font-body">Fostering empathy and kindness towards others and the environment.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-brand-offwhite rounded-full flex items-center justify-center mx-auto mb-6 text-brand-gold shadow-sm border border-gray-100">
-                <Target size={36} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 font-display">Excellence</h3>
-              <p className="text-gray-600 font-body">Striving for the highest quality in academics, arts, and sports.</p>
-            </div>
-            <div className="text-center">
-              <div className="w-20 h-20 bg-brand-offwhite rounded-full flex items-center justify-center mx-auto mb-6 text-brand-gold shadow-sm border border-gray-100">
-                <Lightbulb size={36} />
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3 font-display">Innovation</h3>
-              <p className="text-gray-600 font-body">Encouraging creative thinking and embracing modern methodologies.</p>
-            </div>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-display font-bold text-brand-navy mb-4">Core Values</h2>
+          <div className="w-16 h-1 bg-brand-gold mx-auto mb-6"></div>
+          <p className="text-gray-600 font-body max-w-2xl mx-auto">
+            These values guide everything we do at Divine Public School, Dharampur, every single day
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-white p-6 rounded-2xl shadow-sm text-center border-t-4 border-brand-navy">
+            <h3 className="text-xl font-bold text-brand-navy mb-2 font-display">Excellence</h3>
+            <p className="text-gray-600 text-sm font-body">Strive to do our best in all we do</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm text-center border-t-4 border-brand-navy">
+            <h3 className="text-xl font-bold text-brand-navy mb-2 font-display">Integrity</h3>
+            <p className="text-gray-600 text-sm font-body">Always honest and trustworthy</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm text-center border-t-4 border-brand-navy">
+            <h3 className="text-xl font-bold text-brand-navy mb-2 font-display">Compassion</h3>
+            <p className="text-gray-600 text-sm font-body">Care for every person we meet</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm text-center border-t-4 border-brand-navy">
+            <h3 className="text-xl font-bold text-brand-navy mb-2 font-display">Curiosity</h3>
+            <p className="text-gray-600 text-sm font-body">Love of learning and discovery</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm text-center border-t-4 border-brand-navy">
+            <h3 className="text-xl font-bold text-brand-navy mb-2 font-display">Responsibility</h3>
+            <p className="text-gray-600 text-sm font-body">Accountable citizens of tomorrow</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm text-center border-t-4 border-brand-navy">
+            <h3 className="text-xl font-bold text-brand-navy mb-2 font-display">Leadership</h3>
+            <p className="text-gray-600 text-sm font-body">Lead with courage and humility</p>
           </div>
         </div>
       </div>
