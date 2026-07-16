@@ -2,25 +2,55 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #111827;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Typography */
+  --font-display: var(--font-playfair);
+  --font-body: var(--font-nunito);
+  
+  /* Brand Colors - Matched from dpsdharampur.co.in */
+  --color-brand-navy: #1B4332;
+  --color-brand-navy-light: #2D6A4F;
+  --color-brand-sky: #40916C;
+  --color-brand-gold: #C9A84C;
+  --color-brand-gold-light: #e2bb6b;
+  --color-brand-offwhite: #F8FBF9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0f172a;
+    --foreground: #f8fafc;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+}
+
+/* Custom Textures & Patterns */
+.bg-hero-gradient {
+  background: linear-gradient(135deg, rgba(27, 67, 50, 0.95) 0%, rgba(45, 106, 79, 0.8) 100%);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #C9A84C 0%, #e2bb6b 100%);
+  color: white;
+  box-shadow: 0 4px 24px rgba(201,168,76,0.25);
+  transition: all 0.3s ease;
+}
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(201,168,76,0.35);
+}
+
+.card-shadow {
+  box-shadow: 0 8px 32px rgba(27,67,50,0.08);
 }
